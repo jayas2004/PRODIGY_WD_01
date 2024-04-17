@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+
+# Age groups and their corresponding frequencies
+age_groups = ['0-10', '11-20', '21-30', '31-40', '41-50', '51-60', '61-70', '71+']
+frequency = [150, 200, 300, 250, 180, 120, 80, 50]
+
+# Creating bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(age_groups, frequency, color='skyblue')
+
+# Adding title and labels
+plt.title('Age Distribution in a Population')
+plt.xlabel('Age Group')
+plt.ylabel('Frequency')
+
+# Displaying the chart
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
